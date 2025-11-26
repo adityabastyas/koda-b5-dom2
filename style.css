@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input-box {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.input-box input {
+  padding: 10px 40px 10px 10px;
+  /* width: 100%; */
+  font-size: 16px;
+  border: 2px solid goldenrod;
+}
+
+.eye {
+  position: absolute;
+  /* right: 10px; */
+  /* cursor: pointer; */
+  left: 230px;
+  top: 50%;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
