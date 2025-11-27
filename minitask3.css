@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.box {
+  padding: 20px;
+}
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: rgb(231, 211, 211);
+  border: 10px solid goldenrod;
+  border-radius: 10px;
+  img {
+    width: 100%;
+  }
+  h3 {
+    background-color: red;
+    font-size: 30px;
+  }
+  p {
+    background-color: yellow;
+    font-size: 30px;
+  }
+}

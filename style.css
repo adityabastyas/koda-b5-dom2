@@ -10,6 +10,10 @@
   background-color: red;
   position: static;
 } */
+/* 
+.up {
+  position: relative;
+} */
 
 .input-box {
   position: relative;
@@ -27,7 +31,7 @@
 .eye {
   position: absolute;
   /* right: 10px; */
-  /* cursor: pointer; */
+  cursor: pointer;
   left: 230px;
   padding-top: 8px;
   /* top: 50%; */
@@ -55,8 +59,13 @@ header {
   border: 2px solid goldenrod;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 10;
 }
 
+.up {
+  /* z-index: 16; */
+  position: relative;
+}
 .name {
   color: black;
 }
@@ -69,10 +78,17 @@ header {
 .nav-links {
   display: none;
   list-style-type: none;
-  li a {
-    text-decoration: none;
-    color: black;
-  }
+  /* position: absolute; */
+  z-index: 10;
+  /* top: 50%; */
+  /* right: 0; */
+  /* background-color: rgba(230, 191, 18, 0.95); */
+  /* width: 200%; */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
 }
 
 .nav-links.show {
