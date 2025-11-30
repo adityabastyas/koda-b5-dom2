@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.inputText {
+  padding-bottom: 5px;
+}
+
+.labelPassword {
+  padding-top: 8px;
+}
+
+.button {
+  margin-top: 10px;
+}

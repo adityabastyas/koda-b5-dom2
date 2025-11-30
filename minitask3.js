@@ -59,6 +59,8 @@ const renderPokemon = async () => {
 
   const container = document.querySelector("#image");
 
+  const fragment = document.createDocumentFragment();
+
   dataPoke.map((item) => {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -68,8 +70,9 @@ const renderPokemon = async () => {
     <h3>${item.name}</h3>
     <p>${item.types.join(", ")}</p>`;
 
-    container.appendChild(card);
+    fragment.appendChild(card);
   });
+  container.appendChild(fragment);
 };
 
 renderPokemon();
